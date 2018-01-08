@@ -1,0 +1,405 @@
+
+
+/* Start main rules */
+html, body {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    font-size: 16px;
+    font-family: Arial, FontAwesome;
+    overflow: auto;
+    background-attachment: fixed;
+}
+
+@media (max-width: 767px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+.mainContent {
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1096px;
+    }
+}
+
+a {color: #285f74;}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #06516b;
+    border-color: #06516b;
+}
+
+.btn-primary:hover {
+    background-color: #23282e;
+    border-color: #23282e;
+}
+
+.appName {
+    text-align: center;
+    font-weight: bold;
+    color: #285f74;
+    margin-top: 8%;
+}
+
+.appName span {color: #FFF;}
+
+.pageHead {
+    font-weight: bold;
+    margin-top: 40px;
+    color: #285f74;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, 
+.table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 1px solid #285f74;
+    border-bottom: 1px solid #285f74;
+}
+
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
+.table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
+.table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    border-top: 1px solid #285f74;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #70f1ff;
+}
+
+.full-width {width: 100%;}
+
+
+.asterisk {
+    position: absolute;
+    top: 7px;
+    right: -2px;
+    color: #cf0000;
+    font-size: 1.5em;
+}
+
+/* End main rules*/
+
+
+/* Index Page Starts */
+
+#loginPanel {
+   margin: 100px auto;
+   height: 290px;
+   width: 400px;
+}
+
+#loginPanel .nav-tabs {
+    border-bottom: none;
+    width: 100%;
+}
+
+.loginNav {
+    margin-bottom: 0;
+    border-bottom: none;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0 !important;
+}
+
+#loginPanel .nav-tabs li {
+    float: none;
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#loginPanel .form-group {position: relative;}
+
+#loginPanel .alert {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.loginNav li a {color: #285f74;}
+
+#tabLogin {
+    border-color: #285f74 !important;
+    background-color: #285f74 !important;
+    color: #FFF !important;
+    margin: 0 !important;
+}
+
+#tabRegister {
+    border-color: #5cb85c !important;
+    background-color: #5cb85c !important;
+    color: #FFF !important;
+    margin: 0 -2px 0 0!important;
+}
+
+#formLogin {
+    position: relative;
+    display: block !important;
+    z-index: 10000;
+    padding-top: 16px;
+    background-color: #26879d;
+    border-radius: 0 0 4px 4px;
+    
+}
+
+#formLogin input {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+#formRegister {
+    position: relative;
+    display: block;
+    z-index: 10000;
+    padding-top: 16px;
+    background-color: #46b991;
+    border-radius: 0 0 4px 4px;
+}
+
+#formRegister input {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+#loginPanel button {
+    display: inline-block;
+    margin: auto;
+    left: 0;
+    width: 100%;
+ }
+
+ .passReset {
+     font-size: 0.9em;
+     margin-top: 15px;
+     text-align: center;
+ }
+ 
+/* Index Page Ends */
+ 
+/* Dashboard Starts */
+
+.appNav {margin: 0;}
+
+.logout {
+    position: absolute;
+    top: 20px;
+    width:100%;
+    text-align: center;
+}
+
+.dashboard-group {
+    margin: 15% auto;
+}
+.dashboard-btn {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(6, 81, 107, 0.3);
+    text-align: center;
+    margin: 10px;
+    line-height: 150px;
+    color: #06516b;
+    border: 3px solid #06516b;
+}
+
+.dashboard-btn span {
+    margin-top: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+/* Dashboard Ends */
+
+/* Reset Password Starts */
+
+.passResetHeader {
+    border-color: #285f74 !important;
+    background-color: #285f74 !important;
+    color: #FFF !important;
+    margin: 0 !important;
+    border-radius: 4px 4px 0 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#formLogin label {
+    width: 100%;
+    font-size: 0.8em;
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+}
+
+#formLogin .warning {
+    color: #ffff8a;
+}
+
+/* Reset Password Ends*/
+
+/* Contacts Page Starts */
+
+.membersNav {
+    border-bottom: 1px solid #219cc6;
+}
+
+.membersNav .btn {
+    display: inline-block;
+    padding: 5px;
+    margin: 30px 10px;
+    width: 150px;
+    font-size: 1.3em;
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.54);
+    -moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.54);
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.54);
+}
+
+@media (max-width: 767px) {
+    .appNav {margin-right: -15px; margin-left: -15px;}
+    .membersNav .btn {
+        display: inline-block;
+        padding: 5px;
+        margin: 10px;
+        width: 100px;
+        font-size: 1em;
+        -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.54);
+        -moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.54);
+        box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.54);
+    }
+    .membersNav {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.hideElement {
+    display: none;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+.contact-details {
+    color: #FFF;
+}
+
+.contactData {padding-top: 30px;}
+
+.clickableRow:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.clickableRow > .form-check-input{
+    pointer-events: none;
+    cursor: default;
+}
+
+#contact-photo {
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-box-shadow: 0px 0px 61px -12px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 61px -12px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 61px -12px rgba(0,0,0,0.9);
+    padding: 0;
+}
+
+@media (max-width:1025px) { 
+    .contactEmail {
+        display: none;
+    }
+}
+
+.table-responsive {
+    border: none ;
+}
+/* Contacts Page Ends */
+
+/* Profile Page Starts */
+
+.passCheckG {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    color: #008103;
+    display: none;
+}
+
+.passCheckR {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    color: #810000;
+    display: none;
+}
+
+/* Profile Page Ends */
+
+
+/* Register Page Starts*/
+
+.registerPage {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 50px auto;
+}
+
+.registerPage h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.registerPage a {
+    text-align: center;
+    font-size: 1em;
+    margin: 40px auto;
+    padding: 5px 45px; 
+}
+
+#registerPage .passCheckG, #registerPage .passCheckR {
+    right: 3px;
+}
+
+#formRegister .asterisk {
+    right: 27px;
+}
+/* Register Page Ends*/
+
+/* Footer Starts*/
+
+.footer-container {
+    width: 100%;
+}
+.footer {
+    clear: both;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: #23282e;
+}
+
+.footer a {
+    font-weight: bold;  
+}
+
+.footer a, .footer {font-size: 0.9em;}
